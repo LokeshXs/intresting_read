@@ -18,7 +18,7 @@ color:#fff , #000
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html {
@@ -63,10 +63,10 @@ body::before{
   height: 10%;
   width: 100vw;
   border-bottom: 2px solid white;
-  
+
 }
 
-.logo{
+.logo {
   font-size: 3rem;
 }
 
@@ -74,18 +74,20 @@ body::before{
 
 
 main {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  width: 140rem;
+  margin: 0 auto;
   height: 90%;
   align-items: center;
   justify-content: center;
 
-  
+
 }
 
 .section-hero {
-  transform: translate(0, -25%);
+  /* transform: translate(0, -25%); */
   display: flex;
   flex-direction: column;
   gap: 6.4rem;
@@ -93,7 +95,7 @@ main {
   justify-content: center;
 
   transition: all 1s;
- 
+
 }
 
 
@@ -102,7 +104,7 @@ main {
   transition: all 1s;
   color: aliceblue;
 
- 
+
 }
 
 
@@ -112,10 +114,10 @@ main {
   display: flex;
   gap: 2.4rem;
 
-  
+
 }
 
-.categories{
+.categories {
   transition: all 1s;
 }
 
@@ -126,7 +128,7 @@ main {
   position: relative;
   padding: 1rem 2rem;
   border: 1px solid white;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .select-category-click {
@@ -186,7 +188,7 @@ main {
   color: #1a1a1a;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #1a1a1a;
   color: white;
 
@@ -194,21 +196,37 @@ main {
   /* border: 2px solid white; */
 }
 
-.btn--refresh{
+.btn--refresh {
   display: none;
 }
 
 
-
-.main-new-layout {
-  justify-content: flex-start;
-  padding: 5rem 5rem;
+.section-quote{
+  transition: all 1s;
+}
+.section-quote div{
+  justify-self: flex-start;
+  font-size: 1.6rem;
+  background-color: #4d4d4d;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 40%;
 }
 
+blockquote{
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+
+
+
+
+/* Changing layout */
+
 .main-new-layout .new-layout {
-  width: 100%;
-  transform: none;
-flex-direction: row;
+  align-self: flex-start;
+  padding-top: 6.4rem;
 }
 
 .main-new-layout .new-layout .hide-element {
@@ -242,4 +260,8 @@ flex-direction: row;
   display: inline-block;
 }
 
-
+.main-new-layout .section-quote{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
