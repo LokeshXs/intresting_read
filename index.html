@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+
     <!-- Ion Icons -->
     <script
       type="module"
@@ -20,60 +28,66 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <div class="logo">
         <!-- <img src="" alt="logo" class="logo"> -->
         LOGO
-      </a>
+      </div>
     </header>
 
     <main>
-      <section class="section-hero">
-        <h1 class="primary-heading">HEADING</h1>
+      <section class="section-hero new-layout">
+        <h1 class="primary-heading hide-element">HEADING</h1>
 
-        <div class="categories-search">
+        <div class="categories">
+          <div class="categories-search">
           <div class="select-category">
             <span class="category-text">Select category</span>
             <ion-icon name="chevron-down-outline" class="select-category-icon"></ion-icon>
             <div class="select-category-click"></div>
+
+            <div class="category-options hidden">
+              <div class="category-option">
+                <span>category1</span>
+              </div>
+              <div class="category-option">
+                <span>category2</span>
+              </div>
+              <div class="category-option">
+                <span>category3</span>
+              </div>
+              <div class="category-option">
+                <span>category4</span>
+              </div>
+              <div class="category-option">
+                <span>category</span>
+              </div>
+              <div class="category-option">
+                <span>category</span>
+              </div>
+              <div class="category-option">
+                <span>category</span>
+              </div>
+              <div class="category-option">
+                <span>category</span>
+              </div>
+              <div class="category-option">
+                <span>category</span>
+              </div>
+              <div class="category-option">
+                <span>category</span>
+              </div>
+              <div class="category-option">
+                <span>Random</span>
+              </div>
+            </div>
           </div>
 
-          <a href="https://www.youtube.com/embed/YxWlaYCA8MU?start=78" class="btn btn--search"> Search </a>
+          <button class="btn btn--search">Search</button>
+        </div>
 
-          <div class="category-options hidden">
-            <div class="category-option">
-              <span>category1</span>
-            </div>
-            <div class="category-option">
-              <span>category2</span>
-            </div>
-            <div class="category-option">
-              <span>category3</span>
-            </div>
-            <div class="category-option">
-              <span>category4</span>
-            </div>
-            <div class="category-option">
-              <span>category</span>
-            </div>
-            <div class="category-option">
-              <span>category</span>
-            </div>
-            <div class="category-option">
-              <span>category</span>
-            </div>
-            <div class="category-option">
-              <span>category</span>
-            </div>
-            <div class="category-option">
-              <span>category</span>
-            </div>
-            <div class="category-option">
-              <span>category</span>
-            </div>
-            <div class="category-option">
-              <span>Random</span>
-            </div>
-          </div>
+        <button class="btn btn--refresh">Refresh</button>
+
+          
         </div>
       </section>
     </main>

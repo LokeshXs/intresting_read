@@ -5,135 +5,241 @@
 
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+text color: #b3ffee
+
+color:#fff , #000
 */
 
 
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Rubik',sans-serif;
 }
 
-body{
-  height: 100vh;
-  width: 100vw;
-}
-
-.header{
-  height: 10%;
-  width: 100vw;
-}
-
-html{
+html {
   font-size: 62.5%;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #1a1a1a;
+  color: white;
+}
 
-  main{
+/* body::after{
+  position: absolute;
+  left: -20%;
+  top: 0;
+  height: 50%;
+ 
+  transform: skewX(10deg);
+  width: 100%;
+  content: "";
+  z-index: -10;
+  
+}
+
+body::before{
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  height: 70%;
+  
+  transform: skewX(25deg);
+  width: 100%;
+  content: "";
+  z-index: -10;
+  
+} */
+
+.header {
+  height: 10%;
+  width: 100vw;
+  border-bottom: 2px solid white;
+  
+}
+
+.logo{
+  font-size: 3rem;
+}
+
+
+
+
+main {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 90%;
   align-items: center;
   justify-content: center;
+
+  
 }
 
-.section-hero{
-  transform: translate(0,-25%);
+.section-hero {
+  transform: translate(0, -25%);
   display: flex;
   flex-direction: column;
   gap: 6.4rem;
   align-items: center;
   justify-content: center;
-}
 
-.primary-heading{
-  font-size: 8rem;
-}
-
-
-
-.categories-search {
-  font-size: 3rem;
-  position: relative;
-  display: flex;
-  gap: 2.4rem;
+  transition: all 1s;
  
 }
 
-.select-category{
+
+.primary-heading {
+  font-size: 8rem;
+  transition: all 1s;
+  color: aliceblue;
+
+ 
+}
+
+
+.categories-search {
+  font-size: 2rem;
+  position: relative;
+  display: flex;
+  gap: 2.4rem;
+
+  
+}
+
+.categories{
+  transition: all 1s;
+}
+
+.select-category {
   display: flex;
   justify-content: space-between;
   width: 35rem;
   position: relative;
   padding: 1rem 2rem;
-  border: 1px solid red;
-  border-radius: 10px;
-  
+  border: 1px solid white;
+  border-radius: 10px; 
 }
 
-.select-category-click{
+.select-category-click {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
+
 }
 
-.category-options{
+.category-options {
   position: absolute;
   top: 110%;
   z-index: 3;
-  background-color: #cbc3c3;
+  background-color: #4d4d4d;
+  color: white;
   left: 0;
   display: block;
   height: 25rem;
-  overflow-y:scroll;
+  overflow-y: scroll;
   border-radius: 10px;
-  
 
-}
-.hidden{
-  display: none;
+  transition: all 0.2s ease-in;
 }
 
-.category-options::-webkit-scrollbar{
+.hidden {
+  height: 0;
+}
+
+.category-options::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-.category-option{
-  font-size: 3rem;
+.category-option {
+  font-size: 2rem;
   width: 35rem;
   padding: 2rem 2rem;
   border-radius: 10px;
 }
 
-.category-option:hover{
-  background-color: beige;
+.category-option:hover {
+  background-color: white;
   cursor: pointer;
+  color: #4d4d4d;
+
 }
 
-.btn:active,.btn:link,.btn:visited{
+.btn {
   padding: 0 3rem;
   font-size: 2rem;
   border: none;
   border-radius: 10px;
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.btn:hover{
+  background-color: #1a1a1a;
+  color: white;
+
+  box-shadow: inset 0 0 0 2px white;
+  /* border: 2px solid white; */
+}
+
+.btn--refresh{
+  display: none;
 }
 
 
 
+.main-new-layout {
+  justify-content: flex-start;
+  padding: 5rem 5rem;
+}
+
+.main-new-layout .new-layout {
+  width: 100%;
+  transform: none;
+flex-direction: row;
+}
+
+.main-new-layout .new-layout .hide-element {
+
+  display: none;
+
+}
 
 
+.main-new-layout .new-layout .categories {
+  display: flex;
+  justify-content: space-between;
+  width: 130rem;
+}
 
+.main-new-layout .new-layout .categories .btn--refresh {
+  /* display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  padding: 0 3rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black; */
+
+  display: inline-block;
+}
 
 

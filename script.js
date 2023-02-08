@@ -5,6 +5,7 @@ let categoryOptions = document.querySelector('.category-options');
 let selectCategoryClick = document.querySelector('.select-category-click');
 
 selectCategoryClick.addEventListener('click',function(){
+  console.log('clicked');
   categoryOptions.classList.toggle('hidden');
 });
 
@@ -25,3 +26,31 @@ let categoryText = document.querySelector('.category-text');
     categoryText.textContent = option.textContent;
   });
  });
+
+
+//  Changing layout on clciking the search button
+
+const searchButton = document.querySelector('.btn--search');
+const mainSection = document.querySelector('main');
+const logoIcon = document.querySelector('.logo');
+
+
+
+searchButton.addEventListener('click',function(){
+
+
+    mainSection.classList.add('main-new-layout');
+    
+});
+
+logoIcon.addEventListener('click',function(){
+  mainSection.classList.remove('main-new-layout');
+
+});
+
+
+
+
+
+
+
