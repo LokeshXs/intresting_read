@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/43c11ae329.js" crossorigin="anonymous"></script>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +27,7 @@
     ></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
     <title>Interesting Read</title>
   </head>
   <body>
@@ -58,7 +62,7 @@
             <button class="btn btn--search">Search</button>
           </div>
 
-          <button class="btn btn--refresh">Refresh</button>
+          <button class="btn btn--refresh"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
       </section>
 
@@ -75,51 +79,66 @@
       </aside>
 
       <section class="section-articles">
-        <div class="article">
-          <div>
-            <img src="media/img/chatgpt.webp" alt="" />
-          </div>
+        
+        <div class="article first--article">
+          
+          <img src="media/img/chatgpt.webp" alt="article showcase picture" class="article-img">
           <div class="article-heading">
             <p>
-              Why tech insiders are so excited about ChatGPT, a chatbot that
-              answers questions and writes essays
+              Why tech insiders are so excited about ChatGPT, a chatbot that answers questions and writes essays
             </p>
           </div>
 
-          <div class="bookmark">
-            <p class="article-date">Feb 08, 2018</p>
-            <ion-icon name="bookmarks" class="bookmark-icon"></ion-icon>
+          <div class="article-information">
+            <p>8 Feb, 2023</p>
+            <div class="feature-icons">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+          </div>
+
+        </div>
+
+        <div class="article second--article">
+          <img src="media/img/bill-gates.webp" alt="article showcase picture" class="article-img">
+          <div class="article-heading">
+            <p>
+              Bill Gates thinks A.I. like ChatGPT is the ‘most important’ innovation right now
+            </p>
+          </div>
+
+          <div class="article-information">
+            <p>8 Feb, 2023</p>
+            <div class="feature-icons">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <i class="fa-solid fa-bookmark"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
           </div>
         </div>
 
-        <div class="article"></div>
+        <div class="article third--article">
+          <img src="media/img/goldman.jpg" alt="article showcase picture" class="article-img">
+          <div class="article-heading">
+            <p>
+              Crypto markets are undergoing a ‘flight to quality,’ says Goldman Sachs digital assets chief
+            </p>
+          </div>
 
-        <div class="article"></div>
+          <div class="article-information">
+            <p>8 Feb, 2023</p>
+            <div class="feature-icons">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <i class="fa-solid fa-bookmark"></i>
+              <i class="fa-solid fa-share"></i>
+            </div>
+          </div>
+        </div>
 
-        <!-- <div class="article">
-
-       </div>
-
-       <div class="article">
-
-       </div>
-
-       <div class="article">
-
-       </div>
-
-       <div class="article">
-
-       </div>
-
-       <div class="article">
-
-       </div>
-
-       <div class="article">
-
-       </div> -->
       </section>
+
+      
     </main>
 
     <script src="script.js"></script>

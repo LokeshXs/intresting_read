@@ -57,17 +57,42 @@ categoryOption.forEach(function (option) {
 const searchButton = document.querySelector('.btn--search');
 const mainSection = document.querySelector('main');
 const logoIcon = document.querySelector('.logo');
+const articleSection = document.querySelector('.section-articles');
 
 searchButton.addEventListener('click', function () {
 
   mainSection.classList.add('main-new-layout');
+  articleSection.style.display = "grid";
 
 });
 
 logoIcon.addEventListener('click', function () {
   mainSection.classList.remove('main-new-layout');
+  articleSection.style.display="none";
 
 });
+
+// Clicking the icons
+
+const featureIcons = document.querySelectorAll('.feature-icons');
+
+featureIcons.forEach(function(featureIcon){
+  featureIcon.addEventListener('click',function(e){
+
+    if(e.target.classList.contains('fa-share')||!e.target.classList.contains('fa-solid')) return;
+  
+    e.target.classList.toggle('fill');
+    console.log('clicked');
+  
+  });
+});
+
+
+
+
+
+
+
 
 
 
