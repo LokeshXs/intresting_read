@@ -180,6 +180,9 @@
     align-items: center;
   }
 
+  .logo {
+    height: 80%;
+  }
   
 
 }
@@ -218,6 +221,9 @@
 
   .section-quote div {
     font-size: 1.4rem;
+  }
+  .logo {
+    height: 70%;
   }
 
 
