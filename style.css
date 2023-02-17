@@ -52,6 +52,14 @@ body {
   color: #999999;
 }
 
+.btn--refresh {
+  display: none;
+}
+
+.display--flex{
+  display: flex !important;
+}
+
 
 main {
   display: grid;
@@ -178,9 +186,7 @@ main {
   box-shadow: inset 0 0 0 2px white;
 }
 
-.btn--refresh {
-  display: none;
-}
+
 
 
 .section-quote {
@@ -196,8 +202,15 @@ main {
   background-color: #1a1a1a;
   padding: 2rem;
   border-radius: 10px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   font-style: italic;
+}
+
+.section-quote div span{
+  display: block;
 }
 
 blockquote {
@@ -212,8 +225,7 @@ blockquote {
   display: none;
   width: 100%;
   /* height: 100%; */
-  grid-template-columns: repeat(3,1fr);
-  column-gap: 6.4rem;
+  gap: 6.4rem;
   align-items: center;
   justify-content: center;
 }

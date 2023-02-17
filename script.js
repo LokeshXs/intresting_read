@@ -62,13 +62,13 @@ const articleSection = document.querySelector('.section-articles');
 searchButton.addEventListener('click', function () {
 
   mainSection.classList.add('main-new-layout');
-  articleSection.style.display = "grid";
+  articleSection.classList.add('display--flex');
 
 });
 
 logoIcon.addEventListener('click', function () {
   mainSection.classList.remove('main-new-layout');
-  articleSection.style.display="none";
+  articleSection.classList.remove('display--flex');
 
 });
 
