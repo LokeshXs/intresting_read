@@ -211,6 +211,11 @@
     font-size: 4.4rem;
   }
 
+  .section-quote{
+    align-self: flex-start;
+    
+  }
+
   .section-quote div {
     font-size: 1.4rem;
   }
