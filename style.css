@@ -198,12 +198,13 @@ main {
   transition: all 1s;
   color: #999999;
   width: 35%;
-  justify-self: center;
+  justify-self: flex-start;
   align-self: center;
+  text-align: left;
 }
 
 .section-quote div {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: #1a1a1a;
   padding: 2rem;
   border-radius: 10px;

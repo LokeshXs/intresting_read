@@ -33,13 +33,20 @@
     font-size: 6.4rem;
   }
 
-  .select-category{
+  .select-category {
     width: 30rem;
     font-size: 1.8rem;
   }
 
-  .btn{
+  .btn {
     font-size: 1.8rem;
+  }
+
+  .section-quote{
+    width: 50%;
+  }
+  .section-quote div {
+    font-size: 1.4rem;
   }
 }
 
@@ -63,38 +70,37 @@
     grid-template-columns: 0.5fr 1fr;
   }
 
-  .article:last-child{
+  .article:last-child {
     margin-bottom: 4.8rem;
   }
-  .article:first-child{
+
+  .article:first-child {
     margin-top: 4.8rem;
   }
-  .article-img{
+
+  .article-img {
     width: 90%;
     align-self: center;
     grid-row: 1/-1;
 
     padding: 1rem 0 1rem 1rem;
   }
-  .article-information{
+
+  .article-information {
     grid-column: 2/3;
     align-self: flex-end;
   }
 
-  .categories{
+  .categories {
     flex-direction: column;
     align-items: center;
     gap: 4.8rem;
   }
 
-  .categories-search{
-    gap: 1.6rem; 
+  .categories-search {
+    gap: 1.6rem;
   }
 
-  .section-quote{
-    justify-self: center;
-    width: 70%;
-  }
 
 }
 
@@ -103,125 +109,22 @@
 /* BELOW 704px (Smaller Tablets) */
 /* ******************************** */
 
-@media(max-width:44em){
+@media(max-width:44em) {
   .primary-heading {
     font-size: 5.2rem;
   }
 
-  html{
+  html {
     font-size: 55%;
   }
 
   /* .section-articles {
     gap: 4.8rem;
   } */
-
-  
-}
-
-
-/* ******************************** */
-/* BELOW 608px (Phones) */
-/* ******************************** */
-
-
-@media(max-width: 38em){
-  .section-articles{
-    width: 100%;
-  }
-
-  /* .article{
-    margin-top: 8rem;
-  } */
-
- 
-
-  .article-img{
-    width: 90%;
-  }
-  
-  .article-heading{
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 1rem;
-  }
-  .article-information{
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
-  }
-
-  .article-information p{
-    padding-left: 1rem;
-  }
-
-  .categories{
-    gap: 3.2rem;
-  }
-
-  .categories-search{
-    gap: 1.6rem; 
-  }
-
-  .select-category{
-    width: 20rem;
-    font-size: 1.2rem;
-  }
-
-  .btn{
-    font-size: 1.2rem;
-  }
-
-  .category-option{
-    font-size: 1.8rem;
-    padding: 1.5rem 1.5rem;
-  }
-
-  .section-quote{
-    justify-self: center;
-    width: 100%;
-  }
-
-  .section-quote div{
-    align-items: center;
-  }
-
-  .logo {
-    height: 80%;
-  }
-  
-
-}
-
-/* ******************************** */
-/* BELOW 496px (Phones) */
-/* ******************************** */
-
-@media(max-width:31em){
-
-  .article-heading{
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 0.5rem;
-  }
-  .article-information{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .article-information p{
-    padding-left: 1rem;
-  }
-
-  main{
-    padding: 0 1rem;
-  }
-
-  .primary-heading {
-    font-size: 4.4rem;
-  }
-
-  .section-quote{
+  .section-quote {
     align-self: flex-end;
+    justify-self: center;
+    width: 80%;
   }
 
 
@@ -230,14 +133,116 @@
     align-items: center;
     text-align: center;
   }
-  .logo {
-    height: 70%;
+
+}
+
+
+/* ******************************** */
+/* BELOW 608px (Phones) */
+/* ******************************** */
+
+
+@media(max-width: 38em) {
+  .section-articles {
+    width: 100%;
   }
 
-  .section-articles{
-    justify-content: space-around;
+  /* .article{
+    margin-top: 8rem;
+  } */
+
+
+
+  .article-img {
+    width: 90%;
+  }
+
+  .article-heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
+
+  .article-information {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .article-information p {
+    padding-left: 1rem;
+  }
+
+  .categories {
+    gap: 3.2rem;
+  }
+
+  .categories-search {
+    gap: 1.6rem;
+  }
+
+  .select-category {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .category-option {
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+
+
+  .logo {
+    height: 80%;
   }
 
 
 }
 
+/* ******************************** */
+/* BELOW 496px (Phones) */
+/* ******************************** */
+
+@media(max-width:31em) {
+
+  .article-heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.5rem;
+  }
+
+  .article-information {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .article-information p {
+    padding-left: 1rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  .section-quote {
+    width: 90%;
+  }
+
+  .logo {
+    height: 70%;
+  }
+
+  .section-articles {
+    justify-content: space-around;
+  }
+
+
+}
