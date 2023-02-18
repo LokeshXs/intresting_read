@@ -66,12 +66,14 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   max-width: 140rem;
   margin: 0 auto;
   padding: 0 4rem;
-  height: 88%;
+  /* height: 88%; */
+  margin-top: 6.4rem;
+  row-gap: 4.8rem;
   align-items: center;
   justify-content: center;
 }
