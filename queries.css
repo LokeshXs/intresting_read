@@ -221,12 +221,14 @@
   }
 
   .section-quote{
-    align-self: flex-start;
-    
+    align-self: flex-end;
   }
+
 
   .section-quote div {
     font-size: 1.4rem;
+    align-items: center;
+    text-align: center;
   }
   .logo {
     height: 70%;

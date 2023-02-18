@@ -198,7 +198,7 @@ main {
   transition: all 1s;
   color: #999999;
   width: 35%;
-  justify-self: flex-start;
+  justify-self: center;
   align-self: center;
 }
 
