@@ -74,9 +74,9 @@
     margin-bottom: 4.8rem;
   }
 
-  .article:first-child {
+  /* .article:first-child {
     margin-top: 4.8rem;
-  }
+  } */
 
   .article-img {
     width: 90%;
@@ -118,9 +118,9 @@
     font-size: 55%;
   }
 
-  /* .section-articles {
-    gap: 4.8rem;
-  } */
+  .section-articles {
+    justify-content: start;
+  }
   .section-quote {
     align-self: flex-end;
     justify-self: center;
@@ -132,6 +132,9 @@
     font-size: 1.4rem;
     align-items: center;
     text-align: center;
+  }
+  .feature-icons i{
+    font-size: 1.8rem;
   }
 
 }
@@ -242,7 +245,10 @@
 
   .section-articles {
     justify-content: space-around;
+    gap: 2.4rem;
   }
+
+ 
 
 
 }
