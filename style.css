@@ -40,7 +40,7 @@ body {
 .header {
   height: 12%;
   display: flex;
-  justify-content: center;
+  justify-content:start;
   align-items: center;
   width: 100vw;
   border-bottom: 2px solid white;
@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-  height: 100%
+  width: 20%;
 }
 
 .fill{
