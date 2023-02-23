@@ -126,7 +126,7 @@
     justify-self: center;
     width: 80%;
   }
-
+ 
 
   .section-quote div {
     font-size: 1.4rem;
@@ -179,6 +179,8 @@
     gap: 3.2rem;
   }
 
+ 
+
   .categories-search {
     gap: 1.6rem;
   }
@@ -199,9 +201,7 @@
 
 
 
-  .logo {
-    height: 80%;
-  }
+  
 
 
 }
@@ -240,8 +240,9 @@
   }
 
   .logo {
-    height: 70%;
+    width: 20rem;
   }
+  
 
   .section-articles {
     justify-content: space-around;
